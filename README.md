@@ -124,7 +124,7 @@ Timeline data is stored in **localStorage**, so:
 
 ```bash
 git clone https://github.com/sumaiya7-ops/Assignment-7.git
-cd keenkeeper
+cd assignment-7
 npm install
 npm run dev
 ```

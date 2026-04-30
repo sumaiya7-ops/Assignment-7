@@ -21,8 +21,7 @@ const FriendDetails = ({ friends, onCheckIn }) => {
   };
     return (
     <div>
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-12 gap-8">
-        {/* Left Column - একই থাকবে */}
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-12 gap-8">      
         <div className="md:col-span-4 space-y-6">
           <div className="bg-white p-10 rounded-2xl border text-center">
             <img src={friend.picture} className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-50" alt={friend.name} />
@@ -43,11 +42,8 @@ const FriendDetails = ({ friends, onCheckIn }) => {
             <button className="w-full p-4 border-b flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-50"><Archive size={16}/> Archive</button>
             <button className="w-full p-4 flex items-center justify-center gap-2 text-red-500 font-bold hover:bg-red-50"><Trash2 size={16}/> Delete</button>
           </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="md:col-span-8 space-y-6">
-          {/* Top Stats - একই থাকবে */}
+        </div>     
+        <div className="md:col-span-8 space-y-6">       
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-white p-6 rounded-2xl border text-center">
               <h4 className="text-3xl font-bold text-gray-800">{friend.days_since_contact}</h4>
@@ -69,31 +65,22 @@ const FriendDetails = ({ friends, onCheckIn }) => {
               <p className="text-sm text-gray-400">Connect every <span className="font-bold text-gray-900">{friend.goal} days</span></p>
             </div>
             <button className="px-4 py-2 border rounded-lg text-xs font-bold hover:bg-gray-50 flex items-center gap-2"><Edit2 size={14}/> Edit</button>
-          </div>
-
-          {/* Quick Check-In Section - এখানে পরিবর্তন করা হয়েছে */}
+          </div>   
           <div className="bg-white p-10 rounded-2xl border">
             <h4 className="font-bold text-gray-700 mb-8">Quick Check-In</h4>
-            <div className="grid grid-cols-3 gap-6">
-              
-              {/* Call Button */}
-              <button onClick={() => handleAction('Call')} className="flex flex-col items-center gap-4 p-8 border rounded-2xl hover:border-[#064E3B] hover:bg-green-50 transition group">
+            <div className="grid grid-cols-3 gap-6">            
+               <button onClick={() => handleAction('Call')} className="flex flex-col items-center gap-4 p-8 border rounded-2xl hover:border-[#064E3B] hover:bg-green-50 transition group">
                 <img src={call} alt="Call" className="w-8 h-8 object-contain" />
                 <span className="text-sm font-bold text-gray-500 group-hover:text-[#064E3B]">Call</span>
-              </button>
-
-              {/* Text Button */}
+              </button>        
               <button onClick={() => handleAction('Text')} className="flex flex-col items-center gap-4 p-8 border rounded-2xl hover:border-[#064E3B] hover:bg-green-50 transition group">
                 <img src={text} alt="Text" className="w-8 h-8 object-contain" />
                 <span className="text-sm font-bold text-gray-500 group-hover:text-[#064E3B]">Text</span>
-              </button>
-
-              {/* Video Button */}
+              </button>      
               <button onClick={() => handleAction('Video')} className="flex flex-col items-center gap-4 p-8 border rounded-2xl hover:border-[#064E3B] hover:bg-green-50 transition group">
                 <img src={video} alt="Video" className="w-8 h-8 object-contain" />
                 <span className="text-sm font-bold text-gray-500 group-hover:text-[#064E3B]">Video</span>
               </button>
-
             </div>
           </div>
         </div>
