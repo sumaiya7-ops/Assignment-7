@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://i.pravatar.cc/150?img=1",
+    "email": "david.kim@techmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["college", "tech"],
+    "bio": "We used to work together. He helped me a lot when I started learning web development.",
+    "goal": 30,
+    "next_due_date": "2026-02-27"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://i.pravatar.cc/150?img=2",
+    "email": "emma.design@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["family", "design"],
+    "bio": "My cousin who is really into UI/UX design. We talk about creative ideas often.",
+    "goal": 14,
+    "next_due_date": "2026-05-10"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "lisa.n@workplace.com",
+    "days_since_contact": 15,
+    "status": "almost due",
+    "tags": ["work", "marketing"],
+    "bio": "Former project manager. Always keeps everything well organized.",
+    "goal": 20,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "james.wright@fitness.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["gym", "friend"],
+    "bio": "My gym partner. We usually train together a few times every week.",
+    "goal": 7,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "sarah.chen@university.edu",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["university", "research"],
+    "bio": "We studied together in university. She is now doing research work.",
+    "goal": 30,
+    "next_due_date": "2026-03-05"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "picture": "https://i.pravatar.cc/150?img=6",
+    "email": "marcus.j@musicstudio.com",
+    "days_since_contact": 10,
+    "status": "on-track",
+    "tags": ["music", "hobby"],
+    "bio": "Bandmate and guitarist. We enjoy playing music together in our free time.",
+    "goal": 15,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Martinez",
+    "picture": "https://i.pravatar.cc/150?img=7",
+    "email": "olivia.mtz@freelance.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["freelance", "writing"],
+    "bio": "We worked on a few freelance projects together. She is a great writer.",
+    "goal": 10,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 8,
+    "name": "Tom Baker",
+    "picture": "https://i.pravatar.cc/150?img=8",
+    "email": "tom.baker@travel.org",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["travel", "school"],
+    "bio": "Old school friend. He travels a lot, so we don’t talk very often.",
+    "goal": 20,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 9,
+    "name": "Ryan O'Brian",
+    "picture": "https://i.pravatar.cc/150?img=9",
+    "email": "ryan.ob@sports.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["sports", "neighbor"],
+    "bio": "My neighbor. We often watch football matches together.",
+    "goal": 7,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 10,
+    "name": "Aisha Patel",
+    "picture": "https://i.pravatar.cc/150?img=10",
+    "email": "aisha.p@artgallery.com",
+    "days_since_contact": 22,
+    "status": "almost due",
+    "tags": ["art", "college"],
+    "bio": "Friend from college. She works in an art gallery now.",
+    "goal": 25,
+    "next_due_date": "2026-04-22"
+  }
+]
+
