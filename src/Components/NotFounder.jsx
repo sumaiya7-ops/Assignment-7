@@ -18,8 +18,7 @@ const NotFounder = () => {
         <p className="text-gray-500 mb-8 max-w-md mx-auto">
           The link you followed might be broken, or the page may have been removed. 
           Don't worry, you can always head back home.
-        </p>
-        
+        </p>        
         <Link 
           to="/" 
           className="inline-flex items-center gap-2 bg-[#064E3B] text-white px-8 py-3 rounded-full font-bold hover:bg-[#043327] transition shadow-lg"

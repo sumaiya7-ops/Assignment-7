@@ -30,7 +30,6 @@ const Timeline = ({ timeline }) => {
         </select>
         <ChevronDown className="absolute right-4 top-4 text-gray-400" size={16}/>
       </div>
-
       <div className="space-y-4">
         {filtered.length > 0 ? filtered.map(item => (
           <div key={item.id} className="bg-white p-5 rounded-2xl border border-gray-50 shadow-sm flex items-center gap-5">
