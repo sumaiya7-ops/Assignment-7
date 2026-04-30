@@ -133,7 +133,7 @@ npm run dev
 
 ## 🌐 Live Link
 
-👉 Add your deployed link here (Vercel/Netlify)
+👉https://stirring-pika-972776.netlify.app/
 
 ---
 
