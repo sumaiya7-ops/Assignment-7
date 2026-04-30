@@ -123,7 +123,7 @@ Timeline data is stored in **localStorage**, so:
 ## 🧪 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/keenkeeper.git
+git clone https://github.com/sumaiya7-ops/Assignment-7.git
 cd keenkeeper
 npm install
 npm run dev
