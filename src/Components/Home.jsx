@@ -8,8 +8,7 @@ const Home = ({ friends, loading, timeline }) => {
       </div>
       </div>;
 
-    return (
-        <div>
+    return (     
             <div className="max-w-7xl mx-auto px-6 py-12">
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-[#1E293B] mb-4">Friends to keep close in your life</h1>
@@ -51,7 +50,6 @@ const Home = ({ friends, loading, timeline }) => {
         ))}
       </div>
     </div>
-   </div>
     );
 };
 

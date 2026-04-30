@@ -25,7 +25,7 @@ const Navbar = () => {
         Stats
         </NavLink>
       </div>
-        </div>
+    </div>
     );
 };
 

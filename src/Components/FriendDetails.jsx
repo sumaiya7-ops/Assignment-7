@@ -20,7 +20,6 @@ const FriendDetails = ({ friends, onCheckIn }) => {
     });
   };
     return (
-    <div>
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-12 gap-8">      
         <div className="md:col-span-4 space-y-6">
           <div className="bg-white p-10 rounded-2xl border text-center">
@@ -38,9 +37,12 @@ const FriendDetails = ({ friends, onCheckIn }) => {
             <p className="text-xs text-gray-300 font-medium">Preferred: {friend.email}</p>
           </div>
           <div className="bg-white rounded-2xl border overflow-hidden">
-            <button className="w-full p-4 border-b flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-50"><Clock size={16}/> Snooze 2 Weeks</button>
-            <button className="w-full p-4 border-b flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-50"><Archive size={16}/> Archive</button>
-            <button className="w-full p-4 flex items-center justify-center gap-2 text-red-500 font-bold hover:bg-red-50"><Trash2 size={16}/> Delete</button>
+            <button className="w-full p-4 border-b flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-50">
+           <Clock size={16}/> Snooze 2 Weeks</button>
+            <button className="w-full p-4 border-b flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-50">
+            <Archive size={16}/> Archive</button>
+            <button className="w-full p-4 flex items-center justify-center gap-2 text-red-500 font-bold hover:bg-red-50">
+            <Trash2 size={16}/> Delete</button>
           </div>
         </div>     
         <div className="md:col-span-8 space-y-6">       
@@ -62,9 +64,12 @@ const FriendDetails = ({ friends, onCheckIn }) => {
           <div className="bg-white p-6 rounded-2xl border flex justify-between items-center">
             <div>
               <h4 className="font-bold text-gray-700">Relationship Goal</h4>
-              <p className="text-sm text-gray-400">Connect every <span className="font-bold text-gray-900">{friend.goal} days</span></p>
+              <p className="text-sm text-gray-400">Connect every 
+              <span className="font-bold text-gray-900">{friend.goal} days</span>
+              </p>
             </div>
-            <button className="px-4 py-2 border rounded-lg text-xs font-bold hover:bg-gray-50 flex items-center gap-2"><Edit2 size={14}/> Edit</button>
+            <button className="px-4 py-2 border rounded-lg text-xs font-bold hover:bg-gray-50 flex items-center gap-2">
+            <Edit2 size={14}/> Edit</button>
           </div>   
           <div className="bg-white p-10 rounded-2xl border">
             <h4 className="font-bold text-gray-700 mb-8">Quick Check-In</h4>
@@ -85,7 +90,7 @@ const FriendDetails = ({ friends, onCheckIn }) => {
           </div>
         </div>
       </div>
-    </div>
+  
   );
 };
 
