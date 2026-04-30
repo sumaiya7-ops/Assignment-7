@@ -2,12 +2,15 @@ import React from 'react';
 import { UserPlus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 const Home = ({ friends, loading, timeline }) => {
-    if (loading) return <div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#064E3B]"></div></div>;
+    if (loading) return
+    <div className="h-96 flex items-center justify-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#064E3B]">
+      </div>
+      </div>;
 
     return (
         <div>
             <div className="max-w-7xl mx-auto px-6 py-12">
-      {/* Banner */}
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-[#1E293B] mb-4">Friends to keep close in your life</h1>
         <p className="text-gray-500 max-w-2xl mx-auto mb-8">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
@@ -15,8 +18,6 @@ const Home = ({ friends, loading, timeline }) => {
           <UserPlus size={20}/> Add a Friend
         </button>
       </section>
-
-      {/* Summary Cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
         {[
           { label: 'Total Friends', val: friends.length },
@@ -30,8 +31,6 @@ const Home = ({ friends, loading, timeline }) => {
           </div>
         ))}
       </div>
-
-      {/* Friends Grid */}
       <h2 className="text-2xl font-bold mb-8 text-gray-800">Your Friends</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {friends.map(friend => (
@@ -52,7 +51,7 @@ const Home = ({ friends, loading, timeline }) => {
         ))}
       </div>
     </div>
-        </div>
+   </div>
     );
 };
 
