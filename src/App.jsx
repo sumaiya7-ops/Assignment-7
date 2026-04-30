@@ -1,13 +1,13 @@
-import React from 'react'; // আপনি যেহেতু React দিয়ে করতে চেয়েছিলেন
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './Components/Home'
-import FriendDetails from './Components/FriendDetails'; // এখানে আগে / ছিল, এখন ./ হবে
-import Timeline from './Components/Timeline';           // এখানেও ./ হবে
-import Stats from './Components/Stats';                 // এখানেও ./ হবে
+import FriendDetails from './Components/FriendDetails';
+import Timeline from './Components/Timeline';        
+import Stats from './Components/Stats';          
 import NotFound from './Components/NotFounder';
 
 function App() {
@@ -24,16 +24,12 @@ function App() {
       });
   }, []);
 
-
-  // 🔥 1. Load timeline from localStorage
-  useEffect(() => {
+   useEffect(() => {
     const saved = localStorage.getItem('timeline');
     if (saved) {
       setTimeline(JSON.parse(saved));
     }
   }, []);
-
-  // 🔥 2. Save timeline to localStorage
   useEffect(() => {
     localStorage.setItem('timeline', JSON.stringify(timeline));
   }, [timeline]);
@@ -51,12 +47,24 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route 
-  path="/" 
-  element={<Home friends={friends} loading={loading} timeline={timeline} />} 
-/>
-            <Route path="/friend/:id" element={<FriendDetails friends={friends} onCheckIn={addTimelineEntry} />} />
-            <Route path="/timeline" element={<Timeline timeline={timeline} />} />
-            <Route path="/stats" element={<Stats timeline={timeline} />} />
+             path="/" 
+               element={<Home friends={friends} loading={loading} timeline={timeline} />} 
+            />
+            <Route path="/friend/:id" element={
+              <FriendDetails friends={friends} onCheckIn={addTimelineEntry} 
+              />
+            }
+             />
+            <Route path="/timeline" element={
+              <Timeline timeline={timeline} 
+              />
+            }
+               />
+            <Route path="/stats" element={
+              <Stats timeline={timeline}
+               />
+               }
+                />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
